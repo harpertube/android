@@ -1,6 +1,6 @@
 # HarperTube APK
 
-An Android app for [HarperTube](https://marler8997.github.io/HarperTube/).
+An Android app for [HarperTube](https://harpertube.github.io/).
 
 ## Building
 
