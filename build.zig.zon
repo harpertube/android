@@ -1,0 +1,57 @@
+.{
+    .name = .harpertube,
+    .version = "0.0.0",
+    .fingerprint = 0x6fe0d3175875be22,
+    .minimum_zig_version = "0.17.0",
+    .dependencies = .{
+        // https://dl.google.com/android/repository/repository2-3.xml lists the Android SDK packages.
+        .android_platform = .{
+            .url = "https://dl.google.com/android/repository/platform-36_r02.zip",
+            .hash = "N-V-__8AAAQjVAYr9AJ1Avcm7aC1OtIkzTrm3lig4r1Y9fV9",
+        },
+        .build_tools_windows = .{
+            .url = "https://dl.google.com/android/repository/build-tools_r36_windows.zip",
+            .hash = "N-V-__8AAFmwiQi6Ls0ZCcsmcKiRdAvqMkD9fGJ7UsVCIntC",
+            .lazy = true,
+        },
+        .build_tools_linux = .{
+            .url = "https://dl.google.com/android/repository/build-tools_r36_linux.zip",
+            .hash = "N-V-__8AADnCIAljJXhrdd-tNgZCtN7BxRNNU-SvDHzPq0Ln",
+            .lazy = true,
+        },
+        .build_tools_macos = .{
+            .url = "https://dl.google.com/android/repository/build-tools_r36_macosx.zip",
+            .hash = "N-V-__8AAIJWvwu1VLTO8nvlhWcgR2TT0OrKom--fiM96MVu",
+            .lazy = true,
+        },
+        // https://adoptium.net/temurin/releases/?version=21
+        .jdk_windows_x86_64 = .{
+            .url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_x64_windows_hotspot_21.0.13_9.zip",
+            .hash = "N-V-__8AANgehxQz5XpLXMTdMlpej_WKCIP7NwE0m6Y6Q_ko",
+            .lazy = true,
+        },
+        .jdk_linux_x86_64 = .{
+            .url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.13_9.tar.gz",
+            .hash = "N-V-__8AAOn6jxWJZlMieagvSM2NT0O_PzXazznhianRTOPu",
+            .lazy = true,
+        },
+        .jdk_macos_x86_64 = .{
+            .url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_x64_mac_hotspot_21.0.13_9.tar.gz",
+            .hash = "N-V-__8AAJE0URPb2hx_MKIdbnTGBQHud7C8jMCYqYinQYbA",
+            .lazy = true,
+        },
+        .jdk_macos_aarch64 = .{
+            .url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.13%2B9/OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.13_9.tar.gz",
+            .hash = "N-V-__8AAICR4xQ-RcOIRo2R4df-HsrDOVAVngt_ej494sdI",
+            .lazy = true,
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "AndroidManifest.xml",
+        "src",
+        "tools",
+        "res",
+    },
+}
